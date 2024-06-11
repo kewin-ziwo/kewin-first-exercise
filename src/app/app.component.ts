@@ -1,15 +1,25 @@
-import { Component } from '@angular/core';
-import { RouterModule } from '@angular/router';
-import { NxWelcomeComponent } from './nx-welcome.component';
-import { ContentWrapperComponent } from 'src/components/main-nav/content-wrapper.component';
+import { Component } from "@angular/core";
+import { RouterModule } from "@angular/router";
+import { NxWelcomeComponent } from "./nx-welcome.component";
+import { ContentWrapperComponent } from "src/components/main-nav/content-wrapper.component";
+import { NavigationBarComponent } from "src/components/navigation-bar/navigation-bar.component";
+import { SubNavigationBarComponent } from "src/components/sub-navigation-bar/sub-navigation-bar.component";
+import { FeaturesComponent } from "src/components/features/features.component";
 
 @Component({
   standalone: true,
-  imports: [NxWelcomeComponent, RouterModule, ContentWrapperComponent],
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.scss',
+  imports: [
+    RouterModule,
+    NxWelcomeComponent,
+    ContentWrapperComponent,
+    NavigationBarComponent,
+    SubNavigationBarComponent,
+    FeaturesComponent
+  ],
+  selector: "app-root",
+  templateUrl: "./app.component.html",
+  styleUrl: "./app.component.scss",
 })
 export class AppComponent {
-  title = 'myngapp';
+  title = "myngapp";
 }
