@@ -4,6 +4,7 @@ import { NxWelcomeComponent } from "./nx-welcome.component";
 import { ContentWrapperComponent } from "src/components/main-nav/content-wrapper.component";
 import { NavigationBarComponent } from "src/components/navigation-bar/navigation-bar.component";
 import { SubNavigationBarComponent } from "src/components/sub-navigation-bar/sub-navigation-bar.component";
+import { FeaturesComponent } from "src/components/features/features.component";
 
 @Component({
   standalone: true,
@@ -13,6 +14,7 @@ import { SubNavigationBarComponent } from "src/components/sub-navigation-bar/sub
     ContentWrapperComponent,
     NavigationBarComponent,
     SubNavigationBarComponent,
+    FeaturesComponent
   ],
   selector: "app-root",
   templateUrl: "./app.component.html",
