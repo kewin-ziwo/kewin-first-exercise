@@ -1,19 +1,25 @@
 <div class="h-nav max-h-nav flex items-center justify-between">
   <img src="assets/brand.png" alt="logo" class="h-10" />
   <ul class="flex gap-4">
-    <li class="p-2 flex items-center gap-2 text-gray-600">
+    <app-nav-link>
       Partners
       <span class="material-symbols-outlined text-gray-600 text-icon">
         keyboard_arrow_down
       </span>
-    </li>
-    <li class="p-2 flex items-center gap-2 text-gray-600">
+    </app-nav-link>
+    
+    <app-nav-link>
       Resources
       <span class="material-symbols-outlined text-gray-600 text-icon">
         keyboard_arrow_down
       </span>
-    </li>
-    <li class="p-2 flex items-center gap-2 text-gray-600">Contact Us</li>
-    <li class="p-2 flex items-center gap-2 text-primary">Login</li>
+    </app-nav-link>
+
+    <app-nav-link>Contact Us</app-nav-link>
+
+    <app-nav-link>
+      <span class="text-primary">Login</span>
+    </app-nav-link>
+
   </ul>
 </div>
